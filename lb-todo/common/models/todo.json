@@ -1,0 +1,38 @@
+{
+  "name": "Todo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Untitled"
+    },
+    "body": {
+      "type": "string",
+      "required": true,
+      "default": "' '"
+    },
+    "completed": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "completedAt": {
+      "type": "date",
+      "required": false
+    },
+    "edit": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
